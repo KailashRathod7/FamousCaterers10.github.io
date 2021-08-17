@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="/Websites/FamousCaterers/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+ background-position: center;
+ margin-top: 5%;
+ margin-left: 5%;
+ margin-right: 5%;
+ 
+ margin-bottom: 0%;
+  width: 90%;
+  background-image: url("FamousCaterersHeaderLogo.jpg");
+  height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+
+.outset {border-style: outset;}
+.ridge {border-style: ridge;}
+
+
+</style>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-white">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block "><h5>HOME</h5></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block"><h5>ABOUT</h5></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block"><h5>MENU</h5></a>
+    </div>
+<!-- 	<div class="w3-col s3">
+      <a href="#reviews" class="w3-button w3-block"><h5>REVIEWS</h5></a>
+    </div> -->
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block"><h5>CONTACT</h5></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-bottomleft w3-center w3-hide-small" style="width:10%;">
+    <span class="w3-tag">Since 1984</span>
+	
+  </div>
+ 
+
+ <!--  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div> -->
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-large">
+
+<!-- About Container -->
+
+<div class="w3-container" id="about">
+<div>&nbsp;</div>
+  <div class="w3-content" style="max-width:1000px">  
+  <hr>  
+	<h3 class="w3-center w3-padding-48" style="margin-bottom:0%; padding-bottom:0%;">About Famous Caterers</h3><br>
+      <h5 class="w3-center">Tradition since 1984</h5>
+      <!-- <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p> -->
+      <p class="w3-large w3-text-grey w3-container">Famous Caterers was founded by four brothers in 1984, Which has served people with the best quality food at affordable prices. Famous Caterers provides catering services all over Mumbai and has served more than 1000 marriage events till date.</p>
+ 
+  </div>
+  
+</div>
+
+<!-- <div class="w3-container w3-center" id="about">
+   <!--  <div class="w3-col m6 w3-padding-small">
+     <img src="C:\Websites\FamousCaterers\FamousCaterersLogo.png" class="w3-round w3-image w3-opacity-min" width="350" height="400">
+    </div> 
+
+    <div class="w3-col w3-center m6 w3-padding-small" style="padding-left: 0%;">
+      <h3 class="w3-center">About Famous Caterers</h3><br>
+      <h5 class="w3-center">Tradition since 1984</h5>
+      <!-- <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p> -->
+     <!--  <p class="w3-large w3-text-grey w3-container">Famous Caterers was founded by four brothers in 1984, Which has served people with the best quality food at affordable prices. Famous Caterers provides catering services all over Mumbai and has served more than 1000 marriage events till date.</p>
+    </div>
+ </div>--> 
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+<div>&nbsp;</div>
+ <div class="w3-content" style="max-width:1000px"> 
+
+    <h3 class="w3-center w3-padding-48"> <span><hr>Our Menu</span></h3>
+  
+    <div class="w3-row w3-center w3-card">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Soups');" id="myLink">
+        <div class="w3-col s6 tablink ridge" >Soups</div>
+      </a>		  
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');">
+       <div class="w3-col s6 tablink ridge">Starters</div>
+		
+      </a>
+	  <a href="javascript:void(0)" onclick="openMenu(event, 'MainCourse');" id="myLink">
+        <div class="w3-col s6 tablink ridge">Main Course</div>
+      </a>
+
+      <a href="javascript:void(0)" onclick="openMenu(event, 'PuriRotiParathaRice');">
+        <div class="w3-col s6 tablink ridge">Roti - Rice</div>
+      </a>
+	  
+	  <a href="javascript:void(0)" onclick="openMenu(event, 'ChaatSalad');" id="myLink">
+        <div class="w3-col s6 tablink ridge">Chaat - Salad</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+        <div class="w3-col s6 tablink ridge">Desserts</div>
+      </a>
+	   
+    </div>
+
+    <div id="Soups" class="w3-container menu w3-padding-48 w3-card">
+		<img src="C:\Websites\FamousCaterers\Soups.jpg" style="width:100%">
+    </div>
+
+    <div id="Starters" class="w3-container menu w3-padding-48 w3-card">
+      <img src="C:\Websites\FamousCaterers\Starters.jpg" style="width:100%">
+    </div>  
+ 
+    <div id="MainCourse" class="w3-container menu w3-padding-48 w3-card">
+		<img src="C:\Websites\FamousCaterers\MainCourse.jpg" style="width:100%">
+    </div>  
+  
+  <div id="PuriRotiParathaRice" class="w3-container menu w3-padding-48 w3-card">
+      <img src="C:\Websites\FamousCaterers\Puri_Roti_Paratha_Rice.jpg" style="width:100%">
+    </div>  
+  
+   <div id="ChaatSalad" class="w3-container menu w3-padding-48 w3-card">
+     <img src="C:\Websites\FamousCaterers\Chaat & Salad.jpg" style="width:100%">
+    </div>  
+   
+   <div id="Desserts" class="w3-container menu w3-padding-48 w3-card">
+      <img src="C:\Websites\FamousCaterers\Desserts.jpg" style="width:100%">
+    </div>  
+	
+	 
+</div>
+  <!--   <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+  
+</div>
+
+<!-- <div class="w3-container" id="contact" style="padding-bottom:32px;">
+ <div class="w3-content" style="max-width:1000px"> 
+	
+	
+	<div id="google-reviews"></div>
+ 
+
+  </div>
+</div> -->
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+ <div class="w3-content" style="max-width:1000px"> 
+ 
+    <h3 class="w3-center w3-padding-48"><span ><hr>Contact</span></h3>
+   <!--  <p>Find us at some address at some place.</p> -->    
+<!-- <iframe src="https://www.google.com/search?q=famous%20caterers%20reviews&sxsrf=ALeKk00N61t-tJctqzyiaDy5umveh-lWjw:1629136347138&ei=16UaYdzRB4Tf9QOumoeoBA&oq=famous+caterers+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIECCMQJzIECCMQJzIECAAQQzILCC4QgAQQxwEQrwEyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEMgoILhDHARCvARBDOgcIABBHELADSgQIQRgAUPAJWPAJYI4TaABwA3gAgAGGAYgBgQKSAQMwLjKYAQCgAQHIAQjAAQE&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=1371353056642068545&lqi=ChdmYW1vdXMgY2F0ZXJlcnMgcmV2aWV3cyICOAFIs_7V_5uvgIAIWhkQABABGAAYASIPZmFtb3VzIGNhdGVyZXJzkgEQY2F0ZXJpbmdfc2VydmljZaoBFxABKhMiD2ZhbW91cyBjYXRlcmVycygA&ved=2ahUKEwjR2ovqjbbyAhVZU30KHV9LC6QQvS4wAHoECAoQMw&rlst=f#lrd=0x3be7b9cc72c6424b:0x13080656dacbf041,1,,,&rlfi=hd:;si:1371353056642068545,l,ChdmYW1vdXMgY2F0ZXJlcnMgcmV2aWV3cyICOAFIs_7V_5uvgIAIWhkQABABGAAYASIPZmFtb3VzIGNhdGVyZXJzkgEQY2F0ZXJpbmdfc2VydmljZaoBFxABKhMiD2ZhbW91cyBjYXRlcmVycygA;mv:[[19.2572144,72.980248],[19.026622,72.7977904]]" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    -->
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.946345493984!2d72.9690340968805!3d19.184402063116345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9cc72c6424b%3A0x13080656dacbf041!2sFamous%20Caterers!5e0!3m2!1sen!2sin!4v1628966992226!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- <img src="/w3images/map.jpg" class="w3-image" style="width:100%"> -->
+    <p class="w3-text-blue-grey w3-large"><b>Address: </b>301, New Sunita Co-op. Housing Society, B Cabin Railway Quarters Rd, Shivaji Path, Naupada, Thane, Maharashtra 400602</p>
+	<p class="w3-text-blue-grey w3-large"><b>Phone: </b>098702 69046</p>
+   <!--  <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p> -->
+   <!--  <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+ <p>@FamousCaterers</p>
+</footer>
+<!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://tutorialswebsite.com/cdn/google_places.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDRERbmhKNYw45rS88_NY_UYztPXIhA3Iw&signed_in=true&libraries=places"></script> -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+
+  
+</script>
+
+</body>
+</html>
